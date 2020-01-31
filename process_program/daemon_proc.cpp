@@ -23,6 +23,7 @@ int main(int argc, char const *argv[])
 
     char buf[] = "this is a daemon process\n";
     len = strlen(buf);
+    printf("len:%d\n",len);
     pc = fork();   //1
     if (pc < 0)
     {
